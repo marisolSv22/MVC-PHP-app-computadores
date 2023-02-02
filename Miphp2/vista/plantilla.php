@@ -94,13 +94,13 @@ session_start();
 					<?php if ($_GET["pagina"] == "ingreso"): ?>
 						
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=salir">salir</a>
+					<a class="nav-link" href="index.php?pagina=salir">Log out</a>
 				</li>
 
 			<?php else: ?>
 
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=salir">Salir</a>
+					<a class="nav-link" href="index.php?pagina=salir">Log out</a>
 				</li>
 
 				<?php endif ?>
@@ -122,7 +122,7 @@ session_start();
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=salir">Salir</a>
+					<a class="nav-link" href="index.php?pagina=salir">Log out</a>
 				</li>
 
 			</ul>

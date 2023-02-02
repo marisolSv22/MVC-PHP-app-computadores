@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(session_destroy()){
+        header("location: index.php?pagina=ingreso");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
