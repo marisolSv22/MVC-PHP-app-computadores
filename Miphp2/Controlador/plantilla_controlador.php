@@ -4,6 +4,6 @@
 	{
 		public function ctrtrarplantilla(){
 
-			include "vista/plantilla.php";
+			include "Vista/plantilla.php";
 		}
 	}

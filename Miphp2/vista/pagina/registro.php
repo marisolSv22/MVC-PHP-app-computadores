@@ -14,7 +14,7 @@
 				
 				<div class="input-group-prepend">
 					<span class="input-group-text">
-						<i class="fas fa-user"></i>
+						<i class="fas fa-laptop"></i>
 					</span>
 				</div>
 
@@ -32,7 +32,7 @@
 				
 				<div class="input-group-prepend">
 					<span class="input-group-text">
-						<i class="fas fa-envelope"></i>
+						<i class="fas fa-desktop"></i>
 					</span>
 				</div>
 
@@ -49,7 +49,7 @@
 				
 				<div class="input-group-prepend">
 					<span class="input-group-text">
-						<i class="fas fa-lock"></i>
+						<i class="fas fa-money-bill"></i>
 					</span>
 				</div>
 
@@ -66,7 +66,7 @@
 				
 				<div class="input-group-prepend">
 					<span class="input-group-text">
-						<i class="fas fa-lock"></i>
+						<i class="fas fa-paint-brush"></i>
 					</span>
 				</div>
 

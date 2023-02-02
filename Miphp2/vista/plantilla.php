@@ -1,15 +1,15 @@
 <?php 
 
 session_start();
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PHP</title>
-	<img src="https://altruistas.org/wp-content/uploads/2020/03/Programacion-en-PHP-altruistas.jpg" width="50px">
 
 <!--=====================================
 	PLUGINS DE CSS
@@ -42,18 +42,33 @@ session_start();
 		======================================-->	
 
 <div class="container-fluid">
-	 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	 <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex w-full">
+
+	 <img src="https://altruistas.org/wp-content/uploads/2020/03/Programacion-en-PHP-altruistas.jpg" width="50px" height="50px">
 
   <a class="navbar-brand" href="#">PHP</a>
 
 			<ul class="nav nav-justified py-2 nav-pills">
 
+			<?php if ($_GET["pagina"] == "inicio"): ?>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="index.php?pagina=inicio">Inicio</a>
+						</li>
+		
+					<?php else: ?>
+		
+						<li class="nav-item">
+							<a class="nav-link" href="index.php?pagina=inicio">Inicio</a>
+						</li>
+		
+						<?php endif ?>
 			<?php if (isset($_GET["pagina"])): ?>
 
 				<?php if ($_GET["pagina"] == "registro"): ?>
 						
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=registro">registro PC</a>
+					<a class="nav-link" href="index.php?pagina=registro">Registro PC</a>
 				</li>
 
 			<?php else: ?>
@@ -66,26 +81,26 @@ session_start();
 						<?php if ($_GET["pagina"] == "ingreso"): ?>
 						
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=ingreso">ingreso</a>
+					<a class="nav-link" href="index.php?pagina=ingreso">Login</a>
 				</li>
 
 			<?php else: ?>
 
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=ingreso">ingreso</a>
+					<a class="nav-link" href="index.php?pagina=ingreso">Login</a>
 				</li>
 
 				<?php endif ?>
-						<?php if ($_GET["pagina"] == "inicio"): ?>
+					<?php if ($_GET["pagina"] == "ingreso"): ?>
 						
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=inicio">inicio</a>
+					<a class="nav-link" href="index.php?pagina=salir">salir</a>
 				</li>
 
 			<?php else: ?>
 
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=inicio">inicio</a>
+					<a class="nav-link" href="index.php?pagina=salir">Salir</a>
 				</li>
 
 				<?php endif ?>
@@ -157,7 +172,9 @@ session_start();
 				include "pagina/registro.php";
 			}
 
+
     ?>
+
 </div>
 </nav>
 </div>

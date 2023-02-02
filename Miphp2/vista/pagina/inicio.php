@@ -22,8 +22,9 @@ $usurio = ControladoRegistro::ctrSelecionarRegistro(null,null);
 // echo '<pre>'; print_r($usurio); echo '</pre>'
 
 ?>
-
-  <img src="https://altruistas.org/wp-content/uploads/2020/03/Programacion-en-PHP-altruistas.jpg" width="300px" align="center">
+<div class="text-center">
+  <img src="https://altruistas.org/wp-content/uploads/2020/03/Programacion-en-PHP-altruistas.jpg" width="300px">
+</div>
 
 <div class="container-fluid">
 	<div class="container py-5">
