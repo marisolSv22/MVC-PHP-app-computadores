@@ -1,3 +1,5 @@
+
+
 <!--=====================================
 	CONTENIDO
 	======================================-->
@@ -8,7 +10,7 @@
 	<form class="p-5 bg-light" method="post">
 
 		<div class="form-group">
-			<label for="nombre">Nombre pc</label>
+			<label for="nombre_pc">Nombre pc</label>
 
 			<div class="input-group">
 				
@@ -26,7 +28,7 @@
 
 		<div class="form-group">
 
-			<label for="email">Modelo</label>
+			<label for="modelo">Modelo</label>
 
 			<div class="input-group">
 				
@@ -43,7 +45,7 @@
 		</div>
 
 		<div class="form-group">
-			<label for="pwd">Precio</label>
+			<label for="precio">Precio</label>
 
 			<div class="input-group">
 				
@@ -60,7 +62,7 @@
 			</div>
 			
 			<div class="form-group">
-			<label for="pwd">Color</label>
+			<label for="color">Color</label>
 
 			<div class="input-group">
 				
@@ -85,7 +87,7 @@
 		   //la petición al controlador 
 
 
-		$registro = ControladoRegistro::ctrtrarRegistro();
+		$registro = ControladorRegistro::ctrtrarRegistro();
 
 		if ($registro == "ok") {
 
@@ -100,7 +102,17 @@
 
 			</script>';
 
-			echo '<div class="alert alert-success">El computador ha sido registrado</div>';
+			echo '<div class="alert alert-success">El computador ha sido registrado</div>
+			
+			<script>
+
+               setTimeout(function(){
+
+               	window.location = "index.php?pagina=inicio";
+
+               },3000);
+
+		   </script>';
 			
 		}
 

@@ -7,7 +7,7 @@ if (isset($_GET["id"])) {
 	$item = "id";//item me busque considencias en la columna id
 	$valor = $_GET["id"];//que esa considencia sea igual a la que venga en la variable
 
-	$computador = ControladoRegistro::ctrSelecionarRegistro($item, $valor);
+	$computador = ControladorRegistro::ctrSelecionarRegistro($item, $valor);
 
 	 // echo '<pre>'; print_r($usuario); echo '</pre>';
 
@@ -100,7 +100,7 @@ if (isset($_GET["id"])) {
 		FORMA EN QUE SE INSTANCIA LA CLASE DE UN MÉTODO ESTÁTICO 
 		=============================================*/
 
-		$Acualizar = ControladoRegistro::ctrActualizar();
+		$Acualizar = ControladorRegistro::ctrActualizar();
 
 		if ($Acualizar == "ok") {
 
@@ -122,7 +122,7 @@ if (isset($_GET["id"])) {
 
                	window.location = "index.php?pagina=inicio";
 
-               },300);
+               },3000);
 
 		   </script>';
 			

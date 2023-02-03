@@ -1,6 +1,6 @@
 <?php 
 
-class ControladoRegistro{
+class ControladorRegistro{
 
     /*=============================================
 	Registro
@@ -160,7 +160,7 @@ class ControladoRegistro{
         	$tabla = "computador";
           $valor = $_POST["EliminarRegistro"];
 
-      $respuesta = ModeloRegistro::mdleloelimiar($tabla,$valor);
+      $respuesta = ModeloRegistro::mdleloeliminar($tabla,$valor);
 
       if($respuesta == "ok"){
 

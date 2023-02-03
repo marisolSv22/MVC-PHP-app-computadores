@@ -68,7 +68,7 @@
 		   //la petición al controlador 
 
 
-		$registro = ControladoRegistro::ctrRegistro();
+		$registro = ControladorRegistro::ctrRegistro();
 
 		if ($registro == "ok") {
 
@@ -83,8 +83,17 @@
 
 			</script>';
 
-			echo '<div class="alert alert-success">El usuario ha sido registrado</div>';
+			echo '<div class="alert alert-success">El usuario ha sido registrado</div>
 			
+			<script>
+
+               setTimeout(function(){
+
+               	window.location = "index.php?pagina=ingreso";
+
+               },500);
+
+		   </script>';
 		}
 
     ?>  

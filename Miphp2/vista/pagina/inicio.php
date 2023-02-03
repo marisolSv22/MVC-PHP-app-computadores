@@ -1,8 +1,9 @@
+
 <?php
 
 if(!isset($_SESSION["validarIngreso"])){
 
-echo '<script> window.location = "index.php?pagina=ingreso";<scrip>';
+echo '<script> window.location = "index.php?pagina=ingreso";<script>';
 
 
 return;
@@ -18,7 +19,7 @@ return;
   }
 }
 
-$usurio = ControladoRegistro::ctrSelecionarRegistro(null,null);
+$usurio = ControladorRegistro::ctrSelecionarRegistro(null,null);
 // echo '<pre>'; print_r($usurio); echo '</pre>'
 
 ?>
@@ -78,8 +79,32 @@ $usurio = ControladoRegistro::ctrSelecionarRegistro(null,null);
 
       //la petición al controlador 
 
-      $eliminar = new ControladoRegistro();
+      $eliminar = new ControladorRegistro();
       $eliminar -> ctrEliminar();
+
+      if ($eliminar === "ok") {
+
+        echo '<script>
+
+				if ( window.history.replaceState ) {
+
+					window.history.replaceState( null, null, window.location.href );
+
+				}
+
+			</script>';  
+
+			echo '<script>
+
+               setTimeout(function(){
+
+               	window.location = "index.php?pagina=inicio";
+
+               },3000);
+
+		   </script>';
+
+      }
      
      ?>
 

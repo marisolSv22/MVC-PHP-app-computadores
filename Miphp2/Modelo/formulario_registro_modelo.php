@@ -127,7 +127,7 @@ class ModeloRegistro{
 	Eliminar Registro
 	=============================================*/
 
-		static public function mdleloelimiar($tabla, $valor){
+		static public function mdleloeliminar($tabla, $valor){
 
 		$stmt = Conexion::conectar()->prepare(" DELETE FROM $tabla  WHERE id = :id");
 

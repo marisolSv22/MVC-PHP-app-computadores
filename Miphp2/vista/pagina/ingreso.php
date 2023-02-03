@@ -43,7 +43,7 @@
 
 		   //la petición al controlador 
 
-		$ingreso = new ControladoRegistro();
+		$ingreso = new ControladorRegistro();
 		$ingreso -> ctrIngreso();
 
 		?>
